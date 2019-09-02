@@ -1,3 +1,7 @@
+# after running this target you need to update two things
+# size_t is somewhat buggy with ldc and _IO_FILE needs to be changed as well
+# look at the diff and reproduce the old state
+#
 source/libxlsxd/xlsxwrap.d: source/libxlsxd/xlsxwrap.dpp \
 		libxlsxwriter/include/xlsxwriter/app.h \
 		libxlsxwriter/include/xlsxwriter/chart.h \
